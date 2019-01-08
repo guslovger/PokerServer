@@ -7,7 +7,7 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns
 
 <servlet>
    <servlet-name>players</servlet-name>
-   <servlet-class>servlets.Players</servlet-class>
+   <servlet-class>servlets.PlayersServlet</servlet-class>
 </servlet>
 <servlet-mapping>
   <servlet-name>players</servlet-name>
