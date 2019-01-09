@@ -10,7 +10,7 @@ import java.sql.*;
 import java.util.List;
 import org.json.*;
 
-public class PlayersServlet extends HttpServlet {
+public class LocationServlet extends HttpServlet {
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -23,20 +23,20 @@ public class PlayersServlet extends HttpServlet {
                                              UTF_8), true);
       
         
-    List<PlayerObject> playersList = new PlayersDB().getPlayers();        
-    JSONArray players = new JSONArray();
+    List<LocationObject> locationList = new LocationDB().getLocation();        
+    JSONArray location = new JSONArray();
  //   JSONObject players = new JSONObject();
         
-    for(PlayerObject p : playersList) {
-        JSONObject jPlayer = new JSONObject();
-        jPlayer.put("id", p.id());
-        jPlayer.put("playername" , p.player_name());
-        players.put(jPlayer);    
+    for(LocationObject l : locationList) {
+        JSONObject jLocation = new JSONObject();
+        jLocation.put("id", l.id());
+        jLocation.put("playername" , l.location_name());
+        location.put(jLocation);    
     }
   
     //System.out.println(players.toString());
     
-    out.println(players.toString(2));   
+    out.println(location.toString(2));   
     //System.out.println("Äntligen(tm)");
     out.close();
   }

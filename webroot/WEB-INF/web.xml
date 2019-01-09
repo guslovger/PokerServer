@@ -9,8 +9,16 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns
    <servlet-name>players</servlet-name>
    <servlet-class>servlets.PlayersServlet</servlet-class>
 </servlet>
+<servlet>
+    <servlet-name>location</servlet-name>
+    <servlet-class>servlets.LocationServlet</servlet-class>
+</servlet>
 <servlet-mapping>
   <servlet-name>players</servlet-name>
   <url-pattern>/players</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>location</servlet-name>
+    <url-pattern>/location</url-pattern>
 </servlet-mapping>
 </web-app>
