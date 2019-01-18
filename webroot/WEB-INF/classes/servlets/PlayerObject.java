@@ -1,6 +1,6 @@
 package servlets;
 
-public class PokerPlayerObject{
+public class PlayerObject{
     private String id;
     private String player_name;
     private String stack;
@@ -8,7 +8,7 @@ public class PokerPlayerObject{
     private String card1;
     private String card2;
 
-    public PokerPlayerObject(String id, String player_name, String stack,
+    public PlayerObject(String id, String player_name, String stack,
                              String pos, String card1, String card2) {
         this.id = id;
         this.player_name = player_name;
