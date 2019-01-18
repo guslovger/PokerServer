@@ -16,6 +16,11 @@ public class PlayersServlet extends HttpServlet {
   public void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException{
       System.out.println("doPost() " + request);
+
+      // ur rqeuest hämta JSON
+      // ur JSON , parsa ut en pokerhand
+      // spara pokerhanden i db
+      // skicka "OK"
   }
 
   @Override
